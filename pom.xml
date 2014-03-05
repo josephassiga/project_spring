@@ -4,6 +4,7 @@
 	<groupId>ProjectSpring</groupId>
 	<artifactId>ProjectSpring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<name>joseph_ProjectSpring</name>
 	<!-- Shared version number properties -->
 	<properties>
 		<org.springframework.version>3.2.7.RELEASE</org.springframework.version>
