@@ -5,8 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
 
-import javax.servlet.http.HttpServletResponse;
-
 import model.PersonneDto;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +40,7 @@ public class DefaultRestController {
 	 * @return
 	 */
 	@RequestMapping(method = RequestMethod.GET)
-	public String index(final ModelMap model, final HttpServletResponse response) {
+	public String index(final ModelMap model) {
 		return "restPersonne";
 	}
 
