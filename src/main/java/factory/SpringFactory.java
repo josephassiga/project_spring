@@ -12,7 +12,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public final class SpringFactory {
 
 	private static ApplicationContext applicationContext;
-	private static final String APPLICATION_CONTEXT_XML = "applicationContext.xml";
+	private static final String APPLICATION_CONTEXT_XML = "classpath*:applicationContext.xml";
 	private static final Logger LOGGER = Logger.getLogger(SpringFactory.class);
 
 	/**
