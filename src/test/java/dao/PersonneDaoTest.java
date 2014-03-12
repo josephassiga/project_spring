@@ -13,17 +13,15 @@ import org.junit.Test;
 import services.IPersonneService;
 import factory.PathEnum;
 import factory.SpringFactory;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = { "classpath*:applicationContext" })
 public class PersonneDaoTest {
 
+        @Autowired
 	private IPersonneService iPersonneService;
-
-	@Before
-	public final void init() {
-
-		iPersonneService = SpringFactory.getContext(PathEnum.CLASSPATH)
-				.getBean("personneService", IPersonneService.class);
-	}
 
 	public final void testCreatePersonne() {
 		final PersonneDto personneDO = new PersonneDto();
